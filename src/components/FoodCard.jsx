@@ -4,7 +4,7 @@ export default function FoodCard(props){
     return(
         <div>
             <h3>{foodName}</h3>
-            <p>description of the food</p>
+            <p>{props.foodName}</p>
         </div>
     )
 }

@@ -14,8 +14,8 @@ let foods = [
 export default function FoodList(){
     return(
         <section>
-            {foods.map(food => {
-                return <FoodCard foodName={food} />
+            {foods.map((food,index) => {
+                return <FoodCard key={index} foodName={food}/>
             })}
         </section>
     )
